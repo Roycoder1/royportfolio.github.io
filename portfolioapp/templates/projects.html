@@ -1,0 +1,67 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My skills</title>
+     <link rel="stylesheet" href="{% static 'style.css'%}">
+     	<script src="https://kit.fontawesome.com/6a08cdc35c.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="all3">
+	<div class="navbar">
+		<nav>
+			<div class="firstnav">
+                <a href="{%url 'home'%}"><span class="R">R</span></a>
+		<br><span class="rb">Roy Benisti</span> <br>
+		<span class="job">Web developer</span>
+	</div>
+		<div class="navsection">
+			<a href="{%url 'about'%}">About Me </a>
+			<a href="{%url 'skills'%}">My Skills</a>
+			<a href="{%url 'projects'%}">My projects</a>
+			<a href="{%url 'contact'%}">Contact</a>
+			
+			</div>
+			<div class="icons">
+			<a href="https://www.linkedin.com/in/roy-benisti-3b7ab511b/"><i class="fa-brands fa-linkedin"></i></a>
+			<a href="https://github.com/Roycoder1"><i class="fa-brands fa-github"></i></a>
+			<a href="https://www.facebook.com/roy.benisti"><i class="fa-brands fa-square-facebook"></i></a>
+		</div>
+		</nav>
+	</div>
+    <h1 class='projects'>My projects</h1>
+    <div class="allproject">
+    <div class="firstproject">
+        <div class="img1"> <a href="https://www.loom.com/share/d0ccec01c788411eb658afac69f4cc56"><img  class="pj1"  src="{% static 'project1.png'%}" width="250px" height="250px"></a></div> <br>
+        <span class="spellscript">SpellScript</span> <br>
+        <p class="hackaton1">(Hackhaton Winner)</p>
+    </div>
+    <div class="secondproject">
+        <div class="img2"><a href="https://www.loom.com/share/872ccdbe10224319b4ac3615f6d60da7"><img  class="pj2"  src="{% static 'hackaton2.png'%}" width="250px" height="250px"> </a> </div> <br>
+    <span class="rivals">Rivals</span>
+</div>
+    <div class="thirdproject">
+        <div class="img3"> <a href="https://www.loom.com/share/a40cf4dbb7cc484e94b8a9edef0a40e4"><img class="pj3" src="{% static 'Finalproject.png'%}" width="250px" height="250px"></a></div> <br>
+    <span class="musicshare">MusicShare</span>
+
+    </div>
+</div>
+<footer>
+	<div class="contacts2">
+		<a href="mailto:roybenisti93@gmail.com" target="_blank">
+			<h6>Contact at : roybenisti93@gmail.com</h6></a>
+			<a href="/static/cv_portfolio.pdf " download>
+			<h6>Resume: Roy Benisti</h6>
+		</a>
+
+	</div>
+</footer>
+    
+</body>
+</html>

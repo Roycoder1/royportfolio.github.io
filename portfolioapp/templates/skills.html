@@ -1,0 +1,89 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My skills</title>
+     <link rel="stylesheet" href="{% static 'style.css'%}">
+     	<script src="https://kit.fontawesome.com/6a08cdc35c.js" crossorigin="anonymous"></script>
+
+</head>
+<body class='bodyskills'>
+   <div class="all">
+	<div class="navbar">
+		<nav>
+			<div class="firstnav">
+                <a href="{%url 'home'%}"><span class="R">R</span></a>
+		<br><span class="rb">Roy Benisti</span> <br>
+		<span class="job">Web developer</span>
+	</div>
+		<div class="navsection">
+			<a href="{%url 'about'%}">About Me </a>
+			<a href="{%url 'skills'%}">My Skills</a>
+			<a href="{%url 'projects'%}">My projects</a>
+			<a href="{%url 'contact'%}">Contact</a>
+			
+			</div>
+			<div class="icons">
+			<a href="https://www.linkedin.com/in/roy-benisti-3b7ab511b/"><i class="fa-brands fa-linkedin"></i></a>
+			<a href="https://github.com/Roycoder1"><i class="fa-brands fa-github"></i></a>
+			<a href="https://www.facebook.com/roy.benisti"><i class="fa-brands fa-square-facebook"></i></a>
+		</div>
+		</nav>
+	</div>
+    <div class="left_part_skills">
+        <h1 class = 'skilltitle'>Skills & Experience</h1>
+        <p class="skills_text">
+            Since beginning my journey as a Fullstack Developer 3 Months ago, I’ve done many projects and collaborated with talented people to create games and webpages. <br> <br>
+            I create successful  websites that are fast, easy to use, and built with best practices.<br> <br>
+            I  have full-stack developer experience with popular languages and frameworks as Python , Javascript , Django (back-end) , HTML , CSS , PostgreSQL and Bootstrap. <br> <br>
+            Visit my <a class="skillink" href="https://www.linkedin.com/in/roy-benisti-3b7ab511b/"> LinkedIn </a> profile for more details or just <a class="skillink" href="{%url 'contact'%}">contact </a>  me. </p></div>
+
+    <div class="right_part_skills">
+        <ul class="skillbar" >
+            <li>Front-End</li>
+            <div class="line1"></div>
+            <li>Back - End</li>
+            <div class="line2"></div>
+            <li>SQL</li>
+            <div class="line3"></div>
+            <li>Python</li>
+            <div class="line4"></div>
+        </ul>
+
+
+    </div>
+
+
+
+
+
+
+
+
+        </p>
+
+
+
+
+
+
+    </div>
+  
+    <footer>
+        <div class="contacts">
+            <a href="mailto:roybenisti93@gmail.com" target="_blank">
+                <h6>Contact at: roybenisti93@gmail.com</h6></a>
+                <a href="/static/cv_portfolio.pdf " download>
+                <h6>Resume: Roy Benisti</h6>
+            </a>
+            
+    
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,70 @@
+
+{% load static %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+ <link rel="stylesheet" href="{% static 'style.css'%}">
+ <script src="https://kit.fontawesome.com/6a08cdc35c.js" crossorigin="anonymous"></script>
+
+ </head>
+ 
+<body class="contactback">
+    <div class="all">
+        <div class="navbar">
+            <nav>
+                <div class="firstnav">
+                    <a href="{%url 'home'%}"><span class="R">R</span></a>
+            <br><span class="rb">Roy Benisti</span> <br>
+            <span class="job">Web developer</span>
+        </div>
+            <div class="navsection">
+                <a href="{%url 'about'%}">About Me </a>
+                <a href="{%url 'skills'%}">My Skills</a>
+                <a href="{%url 'projects'%}">My projects</a>
+                <a href="{%url 'contact'%}">Contact</a>
+                
+                </div>
+                <div class="icons">
+                <a href="https://www.linkedin.com/in/roy-benisti-3b7ab511b/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Roycoder1"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/roy.benisti"><i class="fa-brands fa-square-facebook"></i></a>
+            </div>
+            </nav>
+        </div>
+    <div class="content">
+        <div class="sectionleftcontact">
+        <h1 class="titlecontactpage">Contact me</h1>
+        <p class="contact-text">
+            I’m interested in opportunities – especially ambitious or large projects. <br>
+             However, if you have other request or question, don’t hesitate to use the form.
+
+
+        </p>
+        <form method="post">
+            {% csrf_token %}
+        <label class="contact1" for="{{ field.auto_id }}">Name  <br> </label>{{ form.name }} <br>
+        <label class="contact2" for="{{ field.auto_id }}"> Email </label>{{ form.email }} <br>
+        <label class="contact3" for="{{ field.auto_id }}">Suject  <br> </label>{{ form.subject }} <br>
+        <label class="contact4" for="{{ field.auto_id }}"> Message </label>{{ form.message }} <br>
+          
+            <button class="lastbutton" type="submit">Contact me !</button>
+        </form>
+    </div>
+    <div class="sectionrightcontact">
+
+    </div>
+
+
+
+    </div>
+  
+    
+</body>
+</html>
