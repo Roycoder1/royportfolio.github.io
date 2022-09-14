@@ -1,0 +1,68 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio</title>
+	 <link rel="stylesheet" href="{% static 'style.css'%}">
+	 <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700|Google+Sans+Text:400&amp;lang=fr">
+	 <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans+Text:400&amp;text=%E2%86%90%E2%86%92%E2%86%91%E2%86%93&amp;lang=fr">
+	<script src="https://kit.fontawesome.com/6a08cdc35c.js" crossorigin="anonymous"></script>
+	<script src="{% static 'home.js'%}" charset="utf-8"></script>
+</head>
+<body class="back">
+	
+<div class="all">
+	<div class="navbar">
+		<nav>
+			<div class="firstnav">
+				<a href="{%url 'home'%}"><span class="R">R</span></a>
+		<br><span class="rb">Roy Benisti</span> <br>
+		
+		<span class="job">Web developer</span>
+	</div>
+		<div class="navsection">
+			
+			<a href="{%url 'about'%}">About Me </a>
+			<a href="{%url 'skills'%}">My Skills</a>
+			<a href="{%url 'projects'%}">My projects</a>
+			<a href="{%url 'contact'%}">Contact</a>
+			
+			</div>
+			<div class="icons">
+			<a href="https://www.linkedin.com/in/roy-benisti-3b7ab511b/"><i class="fa-brands fa-linkedin"></i></a>
+			<a href="https://github.com/Roycoder1"><i class="fa-brands fa-github"></i></a>
+			<a href="https://www.facebook.com/roy.benisti"><i class="fa-brands fa-square-facebook"></i></a>
+		</div>
+		</nav>
+	</div>
+	<div class="section">
+		
+		<article>
+			<h1 class="textzone"> <span class="first"> Hi ,</span>  <br> <span class="second"> I'm <span class="R_text">R</span>oy,</span> <br> 
+				
+				<div id="welcome"></div>
+				<span class="three"> Full Stack Developer </span></h1>
+			<h3 class="end">Front End / Back End</h3>
+			<a href="{%url 'contact'%}"><button class="contact">Contact me !</button></a>
+			
+
+
+
+		</article>
+
+
+
+
+
+	</div>
+
+
+</div>
+
+<!-- <script src="home.js"></script> -->
+</body>
+</html>
